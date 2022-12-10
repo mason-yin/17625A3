@@ -1,0 +1,29 @@
+syntax = "proto2";
+
+message Book {
+  optional string ISBN = 1;
+  optional string title = 2;
+  optional string author = 3;
+
+  enum Genre {
+    FICTION = 0;
+    NOVEL = 1;
+    FANTASY = 2;
+    POETRY = 3;
+  }
+
+  optional Genre genre = 4;
+  optional int32 publish_year = 5;
+}
+
+message InventoryItem {
+  optional string inventory_number = 1;
+  oneof type {
+    Book book = 2;
+  }
+  enum Status {
+    AVAILABLE = 0;
+    TAKEN = 1;
+  }
+  optional Status status = 3;
+}
