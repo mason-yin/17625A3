@@ -27,3 +27,36 @@ message InventoryItem {
   }
   optional Status status = 3;
 }
+
+message HelloWorldRequest {
+  optional string request = 1;
+}
+
+message HelloWorldResponse {
+  optional string response = 1;
+}
+
+service HelloWorld {
+  rpc HelloWorld(HelloWorldRequest) returns (HelloWorldResponse) {}
+}
+
+message GetBookByISBNRequest {
+  optional string ISBN = 1;
+}
+
+message GetBookByISBNResponse {
+  optional Book book = 1;
+}
+
+message CreateBookRequest {
+  optional Book book = 1;
+}
+
+message CreateBookResponse {
+  optional string response = 1;
+}
+
+service InventoryService {
+  rpc GetBookByISBN(GetBookByISBNRequest) returns (GetBookByISBNResponse) {}
+  rpc CreateBook(CreateBookRequest) returns (CreateBookResponse) {}
+}

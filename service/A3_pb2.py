@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x08\x41\x33.proto\"\x9f\x01\n\x04\x42ook\x12\x0c\n\x04ISBN\x18\x01 \x01(\t\x12\r\n\x05title\x18\x02 \x01(\t\x12\x0e\n\x06\x61uthor\x18\x03 \x01(\t\x12\x1a\n\x05genre\x18\x04 \x01(\x0e\x32\x0b.Book.Genre\x12\x14\n\x0cpublish_year\x18\x05 \x01(\x05\"8\n\x05Genre\x12\x0b\n\x07\x46ICTION\x10\x00\x12\t\n\x05NOVEL\x10\x01\x12\x0b\n\x07\x46\x41NTASY\x10\x02\x12\n\n\x06POETRY\x10\x03\"\x93\x01\n\rInventoryItem\x12\x18\n\x10inventory_number\x18\x01 \x01(\t\x12\x15\n\x04\x62ook\x18\x02 \x01(\x0b\x32\x05.BookH\x00\x12%\n\x06status\x18\x03 \x01(\x0e\x32\x15.InventoryItem.Status\"\"\n\x06Status\x12\r\n\tAVAILABLE\x10\x00\x12\t\n\x05TAKEN\x10\x01\x42\x06\n\x04type')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x08\x41\x33.proto\"\x9f\x01\n\x04\x42ook\x12\x0c\n\x04ISBN\x18\x01 \x01(\t\x12\r\n\x05title\x18\x02 \x01(\t\x12\x0e\n\x06\x61uthor\x18\x03 \x01(\t\x12\x1a\n\x05genre\x18\x04 \x01(\x0e\x32\x0b.Book.Genre\x12\x14\n\x0cpublish_year\x18\x05 \x01(\x05\"8\n\x05Genre\x12\x0b\n\x07\x46ICTION\x10\x00\x12\t\n\x05NOVEL\x10\x01\x12\x0b\n\x07\x46\x41NTASY\x10\x02\x12\n\n\x06POETRY\x10\x03\"\x93\x01\n\rInventoryItem\x12\x18\n\x10inventory_number\x18\x01 \x01(\t\x12\x15\n\x04\x62ook\x18\x02 \x01(\x0b\x32\x05.BookH\x00\x12%\n\x06status\x18\x03 \x01(\x0e\x32\x15.InventoryItem.Status\"\"\n\x06Status\x12\r\n\tAVAILABLE\x10\x00\x12\t\n\x05TAKEN\x10\x01\x42\x06\n\x04type\"$\n\x11HelloWorldRequest\x12\x0f\n\x07request\x18\x01 \x01(\t\"&\n\x12HelloWorldResponse\x12\x10\n\x08response\x18\x01 \x01(\t\"$\n\x14GetBookByISBNRequest\x12\x0c\n\x04ISBN\x18\x01 \x01(\t\",\n\x15GetBookByISBNResponse\x12\x13\n\x04\x62ook\x18\x01 \x01(\x0b\x32\x05.Book\"(\n\x11\x43reateBookRequest\x12\x13\n\x04\x62ook\x18\x01 \x01(\x0b\x32\x05.Book\"&\n\x12\x43reateBookResponse\x12\x10\n\x08response\x18\x01 \x01(\t2E\n\nHelloWorld\x12\x37\n\nHelloWorld\x12\x12.HelloWorldRequest\x1a\x13.HelloWorldResponse\"\x00\x32\x8d\x01\n\x10InventoryService\x12@\n\rGetBookByISBN\x12\x15.GetBookByISBNRequest\x1a\x16.GetBookByISBNResponse\"\x00\x12\x37\n\nCreateBook\x12\x12.CreateBookRequest\x1a\x13.CreateBookResponse\"\x00')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'A3_pb2', globals())
@@ -28,4 +28,20 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _INVENTORYITEM._serialized_end=322
   _INVENTORYITEM_STATUS._serialized_start=280
   _INVENTORYITEM_STATUS._serialized_end=314
+  _HELLOWORLDREQUEST._serialized_start=324
+  _HELLOWORLDREQUEST._serialized_end=360
+  _HELLOWORLDRESPONSE._serialized_start=362
+  _HELLOWORLDRESPONSE._serialized_end=400
+  _GETBOOKBYISBNREQUEST._serialized_start=402
+  _GETBOOKBYISBNREQUEST._serialized_end=438
+  _GETBOOKBYISBNRESPONSE._serialized_start=440
+  _GETBOOKBYISBNRESPONSE._serialized_end=484
+  _CREATEBOOKREQUEST._serialized_start=486
+  _CREATEBOOKREQUEST._serialized_end=526
+  _CREATEBOOKRESPONSE._serialized_start=528
+  _CREATEBOOKRESPONSE._serialized_end=566
+  _HELLOWORLD._serialized_start=568
+  _HELLOWORLD._serialized_end=637
+  _INVENTORYSERVICE._serialized_start=640
+  _INVENTORYSERVICE._serialized_end=781
 # @@protoc_insertion_point(module_scope)
